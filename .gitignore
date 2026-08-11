@@ -1,0 +1,18 @@
+# credenciais (regra: nunca commitar)
+.env
+.env.*
+!.env.example
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+uv.lock
+
+# sistema
+.DS_Store
+
+# claude
+.claude/settings.local.json
+CLAUDE.local.md

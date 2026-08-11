@@ -1,0 +1,12 @@
+[project]
+name = "notebooks-insperai"
+version = "0.1.0"
+description = "Notebooks práticos das trilhas da InsperAI"
+requires-python = ">=3.10"
+dependencies = [
+    "jupyterlab>=4.0",
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "pandas>=2.0",
+    "scikit-learn>=1.4",
+]

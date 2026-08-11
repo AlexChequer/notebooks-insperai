@@ -1,0 +1,83 @@
+# Notebooks — InsperAI
+
+O par prático das trilhas do site [trilhas-insperai](https://trilhas-insperai.vercel.app).
+Cada notebook é a **aplicação em código do que foi dado naquela aula**: mesmo
+exemplo, mesmo dado, mesma história — agora rodando.
+
+A página da aula explica e deixa você mexer nos gráficos. O notebook mostra as
+mesmas contas em Python, com dado de verdade.
+
+## Trilha de Trainees
+
+| Aula | Notebook | Abrir |
+|---|---|---|
+| 1 · Intro a ML + Regressão Linear | [`aula-01-regressao-linear.ipynb`](trainees/aula-01-regressao-linear.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlexChequer/notebooks-insperai/blob/main/trainees/aula-01-regressao-linear.ipynb) |
+| 2 · Escalando o Modelo | [`aula-02-escalando-o-modelo.ipynb`](trainees/aula-02-escalando-o-modelo.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlexChequer/notebooks-insperai/blob/main/trainees/aula-02-escalando-o-modelo.ipynb) |
+
+As demais entram conforme forem ficando prontas.
+
+## Como usar
+
+**No Colab (recomendado, e não precisa instalar nada).** Clique no badge da aula.
+O notebook abre no navegador e o dado é baixado deste repositório na primeira
+célula. Funciona no laptop, no tablet e até no celular.
+
+**Na sua máquina**, com [uv](https://docs.astral.sh/uv/):
+
+```bash
+git clone https://github.com/AlexChequer/notebooks-insperai.git
+cd notebooks-insperai
+uv sync
+uv run jupyter lab
+```
+
+O caminho local é o mesmo que a Aula 0 do site ensina a montar.
+
+> Os notebooks estão **com as saídas salvas**: dá para ler tudo aqui pelo GitHub,
+> com gráficos e números, sem rodar nada. Para refazer do zero, use
+> *Kernel → Restart & Run All*.
+
+## O dado
+
+`dados/imoveis.csv` — **1.460 imóveis reais** vendidos em Ames, Iowa, entre 2006 e
+2010. É o dataset *Ames Housing*, que vem do
+[OpenML](https://www.openml.org/d/42165) e é o mesmo usado em meio mundo de curso
+de ML.
+
+O arquivo aqui é uma versão enxuta: só as colunas que as aulas usam, com os nomes
+em português e as unidades convertidas para o que a gente usa no Brasil.
+
+| coluna | o que é | origem |
+|---|---|---|
+| `metragem_m2` | área construída, em m² | `GrLivArea` (pés²) × 0,0929 |
+| `terreno_m2` | área do terreno, em m² | `LotArea` (pés²) × 0,0929 |
+| `quartos` | quartos acima do solo | `BedroomAbvGr` |
+| `banheiros` | banheiros completos | `FullBath` |
+| `vagas_garagem` | vagas na garagem | `GarageCars` |
+| `qualidade` | nota geral de acabamento, de 1 a 10 | `OverallQual` |
+| `idade_anos` | idade do imóvel na venda | `YrSold − YearBuilt` |
+| `preco_mil` | preço de venda, em **milhares de dólares** | `SalePrice` ÷ 1000 |
+
+Ele é lido direto da pasta quando você roda local, e da URL bruta do GitHub quando
+você roda no Colab — a primeira célula de cada notebook cuida disso sozinha.
+
+## Estrutura
+
+```
+notebooks-insperai/
+├── dados/
+│   └── imoveis.csv           # o dataset enxuto, usado por todos os notebooks
+├── trainees/                 # um notebook por aula da trilha de trainees
+│   ├── aula-01-regressao-linear.ipynb
+│   └── aula-02-escalando-o-modelo.ipynb
+├── pyproject.toml            # as dependências, para o uv
+├── CLAUDE.md                 # como trabalhar neste repositório
+└── README.md
+```
+
+## Contribuindo
+
+Este repositório é material didático: a ideia é **clonar e rodar**, não commitar.
+Achou um erro, um número que não bate ou uma explicação confusa? Abra uma
+[issue](https://github.com/AlexChequer/notebooks-insperai/issues) — é a forma mais
+útil de ajudar.
