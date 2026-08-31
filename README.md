@@ -11,6 +11,7 @@ mesmas contas em Python, com dado de verdade.
 
 | Aula | Notebook | Abrir |
 |---|---|---|
+| 0 · O seu primeiro notebook | [`aula-00-primeiro-notebook.ipynb`](trainees/aula-00-primeiro-notebook.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlexChequer/notebooks-insperai/blob/main/trainees/aula-00-primeiro-notebook.ipynb) |
 | 1 · Intro a ML + Regressão Linear | [`aula-01-regressao-linear.ipynb`](trainees/aula-01-regressao-linear.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlexChequer/notebooks-insperai/blob/main/trainees/aula-01-regressao-linear.ipynb) |
 | 2 · Escalando o Modelo | [`aula-02-escalando-o-modelo.ipynb`](trainees/aula-02-escalando-o-modelo.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlexChequer/notebooks-insperai/blob/main/trainees/aula-02-escalando-o-modelo.ipynb) |
 
@@ -21,6 +22,10 @@ As demais entram conforme forem ficando prontas.
 **No Colab (recomendado, e não precisa instalar nada).** Clique no badge da aula.
 O notebook abre no navegador e o dado é baixado deste repositório na primeira
 célula. Funciona no laptop, no tablet e até no celular.
+
+Se você nunca abriu um notebook, **comece pelo da Aula 0**: ele ensina a mecânica
+(célula, kernel, ordem de execução, como ler um erro), não depende de dado nenhum e
+serve de teste do ambiente para quem fez o setup local.
 
 **Na sua máquina**, com [uv](https://docs.astral.sh/uv/):
 
@@ -59,7 +64,9 @@ em português e as unidades convertidas para o que a gente usa no Brasil.
 | `preco_mil` | preço de venda, em **milhares de dólares** | `SalePrice` ÷ 1000 |
 
 Ele é lido direto da pasta quando você roda local, e da URL bruta do GitHub quando
-você roda no Colab — a primeira célula de cada notebook cuida disso sozinha.
+você roda no Colab — a primeira célula cuida disso sozinha. (A Aula 0 é a exceção:
+ela fabrica o próprio dado com NumPy, para rodar em qualquer lugar sem depender de
+arquivo nem de rede.)
 
 ## Estrutura
 
@@ -68,6 +75,7 @@ notebooks-insperai/
 ├── dados/
 │   └── imoveis.csv           # o dataset enxuto, usado por todos os notebooks
 ├── trainees/                 # um notebook por aula da trilha de trainees
+│   ├── aula-00-primeiro-notebook.ipynb
 │   ├── aula-01-regressao-linear.ipynb
 │   └── aula-02-escalando-o-modelo.ipynb
 ├── pyproject.toml            # as dependências, para o uv
