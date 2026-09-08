@@ -4,6 +4,11 @@ Os notebooks práticos das trilhas da InsperAI. **Um notebook por aula**, sendo 
 par em código da página correspondente em
 [trilhas-insperai](https://github.com/AlexChequer/trilhas-insperai).
 
+A exceção são os **notebooks de revisão** (`aula-revisao-*.ipynb`), que fecham um
+conjunto de aulas em vez de uma: eles não introduzem nada, revisitam o que já foi
+dado. Valem todos os invariantes abaixo, menos o de continuidade de dataset — a
+revisão volta ao exemplo pequeno da lousa, que é onde o aluno viu a conta na mão.
+
 ## A regra de ouro
 
 **Um trainee que acabou de ler a página da aula tem que reconhecer o notebook
