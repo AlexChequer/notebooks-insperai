@@ -17,6 +17,22 @@ mesmas contas em Python, com dado de verdade.
 
 As demais entram conforme forem ficando prontas.
 
+## Trilha de ML/DL Avançado
+
+| Aula | Notebook | Abrir |
+|---|---|---|
+| 1 · EDA Avançada | [`aula-01-eda-avancada.ipynb`](ml-avancado/aula-01-eda-avancada.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlexChequer/notebooks-insperai/blob/main/ml-avancado/aula-01-eda-avancada.ipynb) |
+
+As demais entram conforme forem ficando prontas.
+
+> Diferente da trilha de Trainees, este notebook não usa `dados/imoveis.csv`: a
+> Parte 1 (demonstração) carrega a base `titanic` e a Parte 2 (atividade) carrega
+> `diamonds`, as duas via `seaborn.load_dataset()` — que baixa da internet na hora
+> de rodar. Também tem duas partes num arquivo só (demonstração resolvida +
+> atividade em branco), diferente do padrão de notebook de exercício das aulas 3+
+> de Trainees. Nenhuma das duas coisas segue os invariantes deste repo à risca;
+> registrado aqui para o Alex decidir se ajusta.
+
 ## Como usar
 
 **No Colab (recomendado, e não precisa instalar nada).** Clique no badge da aula.
@@ -78,6 +94,8 @@ notebooks-insperai/
 │   ├── aula-00-primeiro-notebook.ipynb
 │   ├── aula-01-regressao-linear.ipynb
 │   └── aula-02-escalando-o-modelo.ipynb
+├── ml-avancado/               # um notebook por aula da trilha de ML/DL Avançado
+│   └── aula-01-eda-avancada.ipynb
 ├── pyproject.toml            # as dependências, para o uv
 ├── CLAUDE.md                 # como trabalhar neste repositório
 └── README.md
