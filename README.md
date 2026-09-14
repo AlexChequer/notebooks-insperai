@@ -25,14 +25,6 @@ As demais entram conforme forem ficando prontas.
 
 As demais entram conforme forem ficando prontas.
 
-> Diferente da trilha de Trainees, este notebook não usa `dados/imoveis.csv`: a
-> Parte 1 (demonstração) carrega a base `titanic` e a Parte 2 (atividade) carrega
-> `diamonds`, as duas via `seaborn.load_dataset()` — que baixa da internet na hora
-> de rodar. Também tem duas partes num arquivo só (demonstração resolvida +
-> atividade em branco), diferente do padrão de notebook de exercício das aulas 3+
-> de Trainees. Nenhuma das duas coisas segue os invariantes deste repo à risca;
-> registrado aqui para o Alex decidir se ajusta.
-
 ## Como usar
 
 **No Colab (recomendado, e não precisa instalar nada).** Clique no badge da aula.
@@ -84,12 +76,24 @@ você roda no Colab — a primeira célula cuida disso sozinha. (A Aula 0 é a e
 ela fabrica o próprio dado com NumPy, para rodar em qualquer lugar sem depender de
 arquivo nem de rede.)
 
+`dados/titanic.csv` — os 891 passageiros do Titanic, como o Seaborn distribui. Usado
+nas Aulas 1 e 2 de ML/DL Avançado.
+
+`dados/diamonds.csv.gz` — os 53.940 diamantes do dataset clássico `diamonds`, também
+do Seaborn, comprimido em gzip (de ~2,6 MB para ~550 KB — `pd.read_csv` lê gzip sem
+precisar descompactar antes). Usado na Aula 1 de ML/DL Avançado.
+
+Os dois seguem o mesmo padrão do `imoveis.csv`: lidos da pasta local quando existe, e
+da URL bruta do GitHub como último recurso (Colab, ou clone parcial).
+
 ## Estrutura
 
 ```
 notebooks-insperai/
 ├── dados/
-│   └── imoveis.csv           # o dataset enxuto, usado por todos os notebooks
+│   ├── imoveis.csv           # Ames Housing — trilha de trainees
+│   ├── titanic.csv           # Titanic (Seaborn) — ml-avancado, Aulas 1 e 2
+│   └── diamonds.csv.gz       # diamonds (Seaborn), gzip — ml-avancado, Aula 1
 ├── trainees/                 # um notebook por aula da trilha de trainees
 │   ├── aula-00-primeiro-notebook.ipynb
 │   ├── aula-01-regressao-linear.ipynb
