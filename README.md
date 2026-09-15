@@ -22,6 +22,7 @@ As demais entram conforme forem ficando prontas.
 | Aula | Notebook | Abrir |
 |---|---|---|
 | 1 · EDA Avançada | [`aula-01-eda-avancada.ipynb`](ml-avancado/aula-01-eda-avancada.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlexChequer/notebooks-insperai/blob/main/ml-avancado/aula-01-eda-avancada.ipynb) |
+| 2 · Validação de Modelos, Métricas e Data Leakage | [`aula-02-validacao-metricas-leakage.ipynb`](ml-avancado/aula-02-validacao-metricas-leakage.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlexChequer/notebooks-insperai/blob/main/ml-avancado/aula-02-validacao-metricas-leakage.ipynb) |
 
 As demais entram conforme forem ficando prontas.
 
@@ -99,7 +100,8 @@ notebooks-insperai/
 │   ├── aula-01-regressao-linear.ipynb
 │   └── aula-02-escalando-o-modelo.ipynb
 ├── ml-avancado/               # um notebook por aula da trilha de ML/DL Avançado
-│   └── aula-01-eda-avancada.ipynb
+│   ├── aula-01-eda-avancada.ipynb
+│   └── aula-02-validacao-metricas-leakage.ipynb
 ├── pyproject.toml            # as dependências, para o uv
 ├── CLAUDE.md                 # como trabalhar neste repositório
 └── README.md
