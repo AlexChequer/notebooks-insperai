@@ -78,8 +78,14 @@ ela fabrica o próprio dado com NumPy, para rodar em qualquer lugar sem depender
 arquivo nem de rede.)
 
 `dados/titanic.csv` — os 891 passageiros do Titanic, como o Seaborn distribui. Usado
-nas Aulas 1 e 2 de ML/DL Avançado, no mesmo padrão do `imoveis.csv`: lido da pasta
-local quando existe, e da URL bruta do GitHub como último recurso.
+nas Aulas 1 e 2 de ML/DL Avançado.
+
+`dados/diamonds.csv.gz` — os 53.940 diamantes do dataset clássico `diamonds`, também
+do Seaborn, comprimido em gzip (de ~2,6 MB para ~550 KB — `pd.read_csv` lê gzip sem
+precisar descompactar antes). Usado na Aula 1 de ML/DL Avançado.
+
+Os dois seguem o mesmo padrão do `imoveis.csv`: lidos da pasta local quando existe, e
+da URL bruta do GitHub como último recurso (Colab, ou clone parcial).
 
 ## Estrutura
 
@@ -87,7 +93,8 @@ local quando existe, e da URL bruta do GitHub como último recurso.
 notebooks-insperai/
 ├── dados/
 │   ├── imoveis.csv           # Ames Housing — trilha de trainees
-│   └── titanic.csv           # Titanic (Seaborn) — ml-avancado, Aulas 1 e 2
+│   ├── titanic.csv           # Titanic (Seaborn) — ml-avancado, Aulas 1 e 2
+│   └── diamonds.csv.gz       # diamonds (Seaborn), gzip — ml-avancado, Aula 1
 ├── trainees/                 # um notebook por aula da trilha de trainees
 │   ├── aula-00-primeiro-notebook.ipynb
 │   ├── aula-01-regressao-linear.ipynb
