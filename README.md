@@ -15,6 +15,7 @@ mesmas contas em Python, com dado de verdade.
 | 1 · Intro a ML + Regressão Linear | [`aula-01-regressao-linear.ipynb`](trainees/aula-01-regressao-linear.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlexChequer/notebooks-insperai/blob/main/trainees/aula-01-regressao-linear.ipynb) |
 | 2 · Escalando o Modelo | [`aula-02-escalando-o-modelo.ipynb`](trainees/aula-02-escalando-o-modelo.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlexChequer/notebooks-insperai/blob/main/trainees/aula-02-escalando-o-modelo.ipynb) |
 | 4 · Do Neurônio à Rede | [`aula-04-do-neuronio-a-rede.ipynb`](trainees/aula-04-do-neuronio-a-rede.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlexChequer/notebooks-insperai/blob/main/trainees/aula-04-do-neuronio-a-rede.ipynb) |
+| 5 · Backpropagation | [`aula-05-backpropagation.ipynb`](trainees/aula-05-backpropagation.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlexChequer/notebooks-insperai/blob/main/trainees/aula-05-backpropagation.ipynb) |
 
 As demais entram conforme forem ficando prontas.
 
